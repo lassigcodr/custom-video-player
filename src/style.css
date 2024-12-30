@@ -27,3 +27,26 @@
       display: none;
     }
 }
+
+/* Default control visibility */
+#controls {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#container:hover #controls {
+  opacity: 1;
+}
+
+.controls-visible {
+  opacity: 1 !important;
+}
+
+video:fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000; 
+}
